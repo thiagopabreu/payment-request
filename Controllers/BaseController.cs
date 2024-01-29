@@ -55,7 +55,6 @@ public class BaseController<T,TU> : ControllerBase where T : class
         }
         catch (Exception ex)
         {
-            Console.WriteLine("Entrei no catch");
             Console.WriteLine(ex.Message);
             return StatusCode(500, "Internal Server Error");
         }
@@ -83,12 +82,5 @@ public class BaseController<T,TU> : ControllerBase where T : class
 
         return Ok(item);
     }
-
     
-    //
-    // [HttpGet]
-    // public Task<List<T>> GetById()
-    // {
-    //     
-    // }
 }
