@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qndJJVsyujzVWjwIKZZJOR3CCl9Wr/+Ldx6T9Rq3PKU=",
+  "Source": "PaymentsRequests",
+  "BasePath": "_content/PaymentsRequests",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
