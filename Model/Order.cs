@@ -21,6 +21,5 @@ public class Order
     public DateTime OrderDate { get; set; }
     [Required]
     public OrderStatus Status { get; set; }
-    
     public Collection<OrderItem> Items { get; set; }
 }

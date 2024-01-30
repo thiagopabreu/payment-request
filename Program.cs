@@ -34,6 +34,9 @@ IMapper mapper = mappingConfig.CreateMapper();
 builder.Services.AddSingleton(mapper);
 
 builder.Services.AddScoped<IRepository<Product>, ProductRepository>();
+builder.Services.AddScoped<IRepository<OrderItem>, OrderItemRepository>();
+builder.Services.AddScoped<IRepository<Order>, OrderRepository>();
+builder.Services.AddScoped<IRepository<Payment>, PaymentRepository>();
 //
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 

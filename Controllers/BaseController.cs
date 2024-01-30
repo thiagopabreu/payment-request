@@ -72,10 +72,12 @@ public class BaseController<T,TU> : ControllerBase where T : class
         return Ok(item);
     }
 
-    [HttpDelete]
-    public async Task<IActionResult> Delete(int id, T item)
+    [HttpDelete("{id:int}")]
+    public async Task<IActionResult> Delete(int id)
     {
-        if (item == null) return BadRequest("Item cannot be null");
+        if (id == null) return BadRequest("Item cannot be null");
+
+        var item = await _repository.GetById(id);
         
         _repository.Delete(item);
         await _unitOfWork.Commit();
