@@ -14,4 +14,6 @@ public class Payment
     public DateTime PaymentDate { get; set; }
     [Required]
     public Order Order { get; set; }
+    
+    public int OrderId { get; set; }
 }
